@@ -1,0 +1,154 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href= "{% static 'gatewaymotel/tab_logo.jpg' %}" />
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<link rel="stylesheet" href="{% static 'css/stuck.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'js/touchTouch.jquery.js' %}"></script>
+<script src="{% static 'js/TMForm.js' %}"></script>
+
+<script>
+ $(document).ready(function(){
+   $().UItoTop({ easingType: 'easeOutQuart' });
+   $('#stuck_container').tmStickUp({});
+ });
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="" id="top">
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <div class="clear"></div>
+        <h1>
+          <a href="index.html">
+            <img alt="Image description"
+              src="{% static 'images/logo7_editv2.jpg' %}"/>
+          </a>
+        </h1>
+      <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  <div id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li><a href="{% url 'gatewaymotel:home' %}">Home</a></li>
+             <li><a href="{% url 'gatewaymotel:about' %}">About Us</a></li>
+             <li><a href="{% url 'gatewaymotel:attract' %}">Attractions</a></li>
+             <li><a href="{% url 'gatewaymotel:room' %}">Rooms/Rates</a></li>
+             <li class="current"><a href="{% url 'gatewaymotel:contact' %}">Contact Us</a></li>
+           </ul>
+          </nav>
+
+          <div class="clear"></div>
+      </div> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - June 02, 2014!</div>
+  <article class="content_bg1 pad__2">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <h3>Find Us</h3>
+          <div class="map">
+            <div class="row">
+              <div class="grid_9">
+                <figure class="">
+                  <iframe
+                    width="600"
+                    height="450"
+                    frameborder="0" style="border:0"
+                    <iframe
+                      width="640"
+                      height="640"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJveKx-t4W41IRHRCeUZAIEW4&key=AIzaSyCTQyvKn3kDeC8n1VHiSaTxCXrBvKl7Gvw" allowfullscreen>
+                    </iframe>
+                  </iframe>
+                </figure>
+              </div>
+              <div class="grid_3">
+                <address class="address1">
+                <div class="text2 color3">Address:</div>
+                100 Highway #9 <br />P.O. BOX 958 <br />Canora, Saskatchewan <br /> S0A 0L0
+                <div class="clear"></div>
+                <div class="text2 color3">Phones:</div>
+                +1 (306) 563 5661
+                <div class="clear"></div>
+                <div class="text2 color3">Email:</div>
+                <a href="#">gateway.canora@yahoo.com</a>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+         <div class="copyright"><div class="color2"><strong>Arch</strong> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a></div>
+          Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

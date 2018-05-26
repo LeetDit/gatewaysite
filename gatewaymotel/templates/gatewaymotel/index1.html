@@ -1,0 +1,252 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico' %}">
+<link rel="shortcut icon" href= "{% static 'gatewaymotel/tab_logo.jpg' %}" />
+<link rel="stylesheet" href="{% static 'css/camera.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'css/stuck.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+
+<script src="{% static 'js/camera.js' %}"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="{% static 'js/jquery.mobile.customized.min.js' %}"></script>
+<!--<![endif]-->
+<script>
+ $(document).ready(function(){
+  jQuery('#camera_wrap').camera({
+      loader: false,
+      pagination: false ,
+      minHeight: '400',
+      thumbnails: false,
+      height: '30.05208333333333%',
+      caption: true,
+      navigation: true,
+      fx: 'mosaic'
+    });
+  /* carousel */
+     $("#owl").owlCarousel({
+          items : 1, //10 items above 1000px browser width
+          itemsDesktop : [995,1], //5 items between 1000px and 901px
+          itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+          itemsTablet: [700, 1], //2 items between 600 and 0
+          itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+          navigation : true,
+          pagination :  false
+
+      });
+
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});
+  });
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="page1" id="top">
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h1>
+          <a href="">
+            <img alt="Image description"
+              src="{% static 'images/logo7_editv2.jpg' %}"/>
+          </a>
+        </h1>
+      <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  <div id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li><a href="{% url 'gatewaymotel:home' %}">Home</a></li>
+             <li class="current"><a href="{% url 'gatewaymotel:about' %}">About Us</a></li>
+             <li><a href="{% url 'gatewaymotel:attract' %}">Attractions</a></li>
+             <li><a href="{% url 'gatewaymotel:room' %}">Rooms/Rates</a></li>
+             <li><a href="{% url 'gatewaymotel:contact' %}">Contact Us</a></li>
+           </ul>
+          </nav>
+          <div class="clear"></div>
+      </div> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="slider_wrapper ">
+  <div id="camera_wrap" class="">
+    <div data-src="{% static 'images/motelpic/frontyard4_edit.jpg' %}">
+      <div class="caption fadeIn">
+        Welcome to Gateway Motel
+      </div>
+    </div>
+    <div data-src="{% static 'images/motelpic/garden3_edit.jpg' %}">
+      <div class="caption fadeIn">
+        Junction of Hwy 5 & 9
+      </div>
+    </div>
+    <div data-src="{% static 'images/motelpic/frontyard3_edit.jpg' %}">
+      <div class="caption fadeIn">
+        Canora, SK
+      </div>
+    </div>
+  </div>
+</div>
+<!--=====================
+          Content
+======================-->
+<p style="margin-left: 400px"><font size="70"><strong><br />Welcome</strong></font></p>
+<p style="margin-left: 200px"><font size="4"><br />Welcome! Gateway motel is clean, quiet and affordable motel located on the junction of <strong>highway #9 and highway #5</strong> in town of Canora, SK.
+   <br /><br />With <strong>3 lakes and 2 provincial parks</strong> located close to the motel, Gateway Motel is truly a place to enjoy your stay in Canora.
+   <br /><br /> Our 14 guest rooms  offer; 1 double bed, 2 double beds, 1 queen bed <strong>(smoking room available)</strong>.
+   <br /><br />Each of our room features <strong>flat-screen TV, hardwood flooring, microwave, fridge, coffeemaker, and high-speed Wi-Fi</strong>.
+   <br /><br />Our rooms have been refurbished to a high standard of comfort and modern. With a <strong>huge parking space</strong> in front of your room doors,
+   <br /><br />We welcome <strong>large sized vehicles, such as company trucks, semi-trucks, or RVs</strong>.
+   <br /><br /><strong>Barbeque</strong> is available upon request for customers to cook!
+   <br /><br />We offer <strong>weekly/monthly</strong> rates for customers looking to stay for a long duration. We welcome <strong>wedding, funeral or reunion guest</ strong> for multiple rooms.
+   <br /><br />Our green and fresh front yard is ideal for children and pets to play around on(we are pets friendly place).
+   <br /><br />The warm comfort from the reception will make you feel like you are home!
+</font></p>
+
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - June 02, 2014!</div>
+  <article class="content_bg1 pad__1">
+    <div class="container">
+      <div class="row">
+        <div class="grid_6">
+          <div class="block1">
+           <div class="count">"Clean and Quiet"</div>
+           <h3>"It is a very clean and quiet motel. Towels and other necessities are provided. Manager is very polite and easy to talk to. I would recommend this place to other travellers who will enjoy simple comfort. Awesome."</h3>
+         </div>
+       </div>
+        <div class="grid_6">
+          <div class="block1">
+            <div class="count">"Good Location"</div>
+            <h3>"I enjoyed my stay here, nice manager, clean room, and washroom was clean during my stay, and cable tv and wifi worked fine which was important to me, and good location."</h3>
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="pad__1">
+    <div class="container">
+      <div class="row">
+        <div class="grid_6">
+          <div class="block1">
+            <div class="count">"Room was Clean"</div>
+            <h3>"Room was clean and beds where good."</h3>
+            <br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <article class="content_bg1 pad__2">
+    <div class="container">
+      <div class="row">
+        <div class="grid_6">
+          <h2>About us</h2>
+          <div class="map">
+            <div class="row">
+              <div class="grid_9">
+                <figure class="">
+                  <iframe
+                    width="600"
+                    height="450"
+                    frameborder="0" style="border:0"
+                    <iframe
+                      width="640"
+                      height="640"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJveKx-t4W41IRHRCeUZAIEW4&key=AIzaSyCTQyvKn3kDeC8n1VHiSaTxCXrBvKl7Gvw" allowfullscreen>
+                    </iframe>
+                  </iframe>
+                </figure>
+              </div>
+              <div class="grid_3">
+                <address class="address1">
+                <div class="text2 color3">Address:</div>
+                100 Highway #9 <br />P.O. BOX 958 <br />Canora, Saskatchewan <br /> S0A 0L0
+                <div class="clear"></div>
+                <div class="text2 color3">Phones:</div>
+                +1 (306) 563 5661
+                <div class="clear"></div>
+                <div class="text2 color3">Email:</div>
+                <a href="#">gateway.canora@yahoo.com</a>
+                </address>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+          <a href="#" class="btn bt__1">More</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="container">
+    <div class="row">
+      <div class="grid_6 preffix_3 ta__center">
+        <h2 class="color1">G a t e w a y  M o t e l</h2>
+        <div id="owl">
+          <div class="item">
+            <div class="text2">Tony Park</div> • (306) 563 - 5661 <br />• Junction of Highway 5 & 9<br />• gateway.canora@yahoo.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+         <div class="copyright"><div class="color2"><strong>Arch</strong> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a></div>
+          Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

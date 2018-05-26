@@ -1,0 +1,153 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blog</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href= "{% static 'gatewaymotel/tab_logo.jpg' %}" />
+<link rel="stylesheet" href="{% static 'css/stuck.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'js/touchTouch.jquery.js' %}"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+ $(document).ready(function(){
+   $().UItoTop({ easingType: 'easeOutQuart' });
+   $('#stuck_container').tmStickUp({});
+ });
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="" id="top">
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <div class="clear"></div>
+        <h1>
+          <a href="index.html">
+            <img alt="Image description"
+              src="{% static 'images/logo7_editv2.jpg' %}"/>
+          </a>
+        </h1>
+      <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  <div id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li><a href="{% url 'gatewaymotel:home' %}">Home</a></li>
+             <li><a href="{% url 'gatewaymotel:about' %}">About Us</a></li>
+             <li><a href="{% url 'gatewaymotel:attract' %}">Attractions</a></li>
+             <li class="current"><a href="{% url 'gatewaymotel:room' %}">Rooms/Rates</a></li>
+             <li><a href="{% url 'gatewaymotel:contact' %}">Contact Us</a></li>
+           </ul>
+          </nav>
+
+          <div class="clear"></div>
+      </div> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - June 02, 2014!</div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h3>Rates</h3>
+      </div>
+      <div class="grid_4">
+        <div class="block2">
+          <div class="fa fa-bed"></div>
+          <div class="text1"><p style="margin-left: 70px"><a href="#"><strong>1 Double/Queen Bed Room<br /> <br />$65 + tax</strong></a></p></div>
+          <p style="margin-left: 70px"> • Flat Screen TV<br /> • High-Speed Wifi<br /> • Microwave<br /> • Coffe Maker<br /> • Fridge<br /> • Hardwood Flooring<br /> • Air Condition<br /> • Centeral Heating System<br /> </p>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="block2">
+          <div class="fa fa-bed"></div>
+          <div class="text1"><p style="margin-left: 100px"><a href="#"><strong>2 Double Bed Room <br /> <br /> $70 + tax</strong></a></p></div>
+          <p style="margin-left: 100px"> • Flat Screen TV<br /> • High-Speed Wifi<br /> • Microwave<br /> • Coffe Maker<br /> • Fridge<br /> • Hardwood Flooring<br /> • Air Condition<br /> • Centeral Heating System<br /> </p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_7">
+        <h3>Rooms</h3>
+        <div class="blog">
+          <div class="clear"></div>
+          <img src="{% static 'images/motelpic/room2_edit.jpg' %}" alt="" class="img_inner fleft">
+        </div>
+        <div class="blog">
+          <div class="clear"></div>
+          <img src="{% static 'images/motelpic/room5_edit.jpg' %}" alt="" class="img_inner fleft">
+        </div>
+        <div class="blog">
+          <div class="clear"></div>
+          <img src="{% static 'images/motelpic/room4.jpg' %}" alt="" class="img_inner fleft" style="transform:rotate(90deg);">
+        </div>
+        <div class="blog">
+          <div class="clear"></div>
+          <img src="{% static 'images/motelpic/washroom1_edit.jpg' %}" alt="" class="img_inner fleft">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+         <div class="copyright"><div class="color2"><strong>Arch</strong> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a></div>
+          Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Services</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no' %}" />
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href= "{% static 'gatewaymotel/tab_logo.jpg' %}" />
+<link rel="stylesheet" href="{% static 'css/stuck.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.mobilemenu.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tmStickUp.js' %}"></script>
+<script src="{% static 'js/jquery.ui.totop.js' %}"></script>
+<script src="{% static 'js/touchTouch.jquery.js' %}"></script>
+<script>
+ $(document).ready(function(){
+   $().UItoTop({ easingType: 'easeOutQuart' });
+   $('#stuck_container').tmStickUp({});
+ });
+</script>
+<!--[if lt IE 9]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+</div>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+<![endif]-->
+</head>
+
+<body class="" id="top">
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header>
+<!--==============================
+            Stuck menu
+=================================-->
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <div class="clear"></div>
+        <h1>
+          <a href="index.html">
+            <img alt="Image description"
+              src="{% static 'images/logo7_editv2.jpg' %}"/>
+          </a>
+        </h1>
+      <div class="clear"></div>
+    </div>
+   </div>
+  </div>
+  <div id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <div class="navigation ">
+          <nav>
+            <ul class="sf-menu">
+             <li><a href="{% url 'gatewaymotel:home' %}">Home</a></li>
+             <li><a href="{% url 'gatewaymotel:about' %}">About Us</a></li>
+             <li class="current"><a href="{% url 'gatewaymotel:attract' %}">Attractions</a></li>
+             <li><a href="{% url 'gatewaymotel:room' %}">Rooms/Rates</a></li>
+             <li><a href="{% url 'gatewaymotel:contact' %}">Contact Us</a></li>
+           </ul>
+          </nav>
+
+          <div class="clear"></div>
+      </div> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!--=====================
+          Content
+======================-->
+<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - June 02, 2014!</div>
+  <article class="content_bg1 pad__1">
+  </article>
+  <div class="pad__3">
+  <div class="container">
+    <div class="row">
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/canora1.jpg' %}" width="500" length="100" alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Events in Canora</strong></a></div>
+              With a growing population, Canora welcomes you to our progressive community with traditional values and full of community spirit. Endless recreational opportunities, tourism activities and economic possibilities all complement Canora's wide range of services and low cost of living to provide a quality of life that makes this a great place to visit or call home. You don't have to be a lifelong resident to feel safe and at home in this attractive rural town.
+              <a href="https://canora.com/events/" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/curling2.jpg' %}" width="1000" length="200" alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Leisure Services</strong> </a></div>
+              The Town of Canora Leisure Services Department offers a wide variety of facilities and activities for your enjoyment. These facilities include several community parks, walking trails, junior Olympic-sized outdoor swimming pool, Civic Centre, Sylvia Fedoruk Centre, Sports Service Centre, Golf Course Activity Centre, tennis court and skate park.  Additionally, the Town of Canora offers many leisure activities and programs throughout the year.
+              <a href="https://canora.com/residents/leisure-services/" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ind__1"></div>
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/golf.jpg' %}" width="1000", length="200" alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Canora Golf Course</strong></a></div>
+              Located at 333 Canora Avenue, Canora is proud of their challenging nine hole course featuring 3,350 yards of lush fairway, exceptional grass greens, and breathtaking scenery. The par 36 offers a practice putting green close to the clubhouse. The clubhouse provides rentals on motor golf carts, pull carts and clubs and offers a variety of beverages and snacks. Canora Golf Club is licensed with a banquet room, large viewing deck, a barbeque, and can host a variety of tournaments and social events. During the summer season the golf course is open from April 15 to October 15. In the winter come out and enjoy our course by snowshoeing in the powder or cross country skiing on the groomed trails.
+              <a href="https://canora.com/residents/parks-recreation/golf-course/" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/fishing.jpg' %}" width="1000" length="200" alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Fishing in Saskatchewan</strong> </a></div>
+              Welcome to Saskatchewan, Canada, home to 100,000 lakes and rivers and some of the best freshwater fishing in the world. Experienced fishing outfitters will guide you to trophy northern pike, walleye, lake trout, Arctic grayling and more in settings of intense natural beauty.              <a href="http://www.tourismsaskatchewan.com/things-to-do/fishing" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ind__1"></div>
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/hunt.jpg' %}" alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Hunting in Saskatchewan</strong> </a></div>
+              Saskatchewan has an abundance of game species that offer a wide range of hunting opportunities to resident and non-resident hunters each year. Hunting is also an important tool used to manage wildlife populations.              <a href="https://www.saskatchewan.ca/residents/parks-recreation-heritage-and-arts/hunting-trapping-and-angling/hunting" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid_6">
+        <div class="box">
+          <div class="maxheight">
+            <img src="{% static 'images/motelpic/business.jpg' %}" width="1000" length="200"alt="">
+            <div class="box_bot">
+              <div class="text1"><a href="#"><strong>Canora Business Directory</strong> </a></div>
+              <a href="https://canora.com/wp-content/uploads/2018/04/Business-Directory-2018.pdf" class="fa fa-chevron-right"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+</div>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+         <div class="copyright"><div class="color2"><strong>Arch</strong> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a></div>
+          Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
